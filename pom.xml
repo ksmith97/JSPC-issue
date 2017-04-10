@@ -36,6 +36,18 @@
                         <artifactId>jspc-compiler-tomcat8</artifactId>
                         <version>2.0.2</version>
                     </dependency>
+
+                    <dependency>
+                        <groupId>org.apache.maven.</groupId>
+                        <artifactId>maven-plugin-api</artifactId>
+                        <version>3.0.5</version>
+                        <exclusions>
+                            <exclusion>
+                                <artifactId>sisu-guice</artifactId>
+                                <groupId>org.sonatype.sisu</groupId>
+                            </exclusion>
+                        </exclusions>
+                    </dependency>
                 </dependencies>
             </plugin>
         </plugins>
